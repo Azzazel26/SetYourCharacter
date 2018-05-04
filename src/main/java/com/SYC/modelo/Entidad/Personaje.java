@@ -3,7 +3,7 @@ package com.SYC.modelo.Entidad;
 
 import java.util.List;
 
-public class Character {
+public class Personaje {
 	private Integer vida;
 	private Integer mana;
 	private String nombre;
@@ -20,7 +20,7 @@ public class Character {
 	
 	
 	
-	public Character(Integer vida, Integer mana, String nombre, String raza, String clase, String cultura,
+	public Personaje(Integer vida, Integer mana, String nombre, String raza, String clase, String cultura,
 			Deidad religion, List<Atributo> atributos, List<Habilidad> habilidades, List<Armadura> armadura,
 			List<Arma> arma, List<Item> inventario) {
 		super();
@@ -37,6 +37,8 @@ public class Character {
 		this.arma = arma;
 		this.inventario = inventario;
 	}
+	
+	
 	public Integer getVida() {
 		return vida;
 	}
@@ -108,6 +110,14 @@ public class Character {
 	}
 	public void setInventario(List<Item> inventario) {
 		this.inventario = inventario;
+	}
+
+	@Override
+	public String toString() {
+		return "Personaje [vida=" + vida + ", mana=" + mana + ", nombre=" + nombre + ", raza=" + raza + ", clase="
+				+ clase + ", cultura=" + cultura + ", religion=" + religion + ", atributos=" + atributos
+				+ ", habilidades=" + habilidades + ", armadura=" + armadura + ", arma=" + arma + ", inventario="
+				+ inventario + "]";
 	}
 	
 }

@@ -5,7 +5,6 @@ public class Deidad {
 	private String descripcion;
 	
 	public Deidad(String nombre, String descripcion) {
-		super();
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 	}
@@ -24,6 +23,11 @@ public class Deidad {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	@Override
+	public String toString() {
+		return "Deidad [nombre=" + nombre + ", descripcion=" + descripcion + "]";
 	}
 	
 	

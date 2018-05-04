@@ -24,5 +24,10 @@ public class Atributo {
 	public void setValor(Integer valor) {
 		this.valor = valor;
 	}
+
+	@Override
+	public String toString() {
+		return "Atributo [nombre=" + nombre + ", valor=" + valor + "]";
+	}
 	
 }
