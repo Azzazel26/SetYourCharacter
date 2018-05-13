@@ -2,7 +2,9 @@ package com.SYC.modelo.persistencia;
 
 import java.util.List;
 
-import com.SYC.modelo.Entidad.Personaje;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.SYC.modelo.entidad.Personaje;
 
 public interface PersonajeDao{
 	

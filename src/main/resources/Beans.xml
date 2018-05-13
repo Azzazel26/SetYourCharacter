@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<mongo:repositories base-package="com.SYC.modelo.entidad"/>
+	
+<mongo:mongo id="mongo" host="localhost" /> 
+<mongo:db-factory id="mongoDbFactory" dbname="test" mongo-ref="mongo" />
+<!-- 	<mongo:mongo-client id="mongoClient" host="localhost" port="27017"> -->
+<!-- 		<mongo:client-options write-concern="SAFE"/> -->
+<!-- 	</mongo:mongo-client> -->
+
+<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate"> 
+    <constructor-arg ref="mongoDbFactory"/> 
+</bean>
+
+<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+
+	
+	<mongo:mongo-client id="mongo2" replica-set="127.0.0.1:27017,127.0.0.1:27017" />
+</beans>

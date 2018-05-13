@@ -1,4 +1,4 @@
-package com.SYC.modelo.Entidad;
+package com.SYC.modelo.entidad;
 
 public class Atributo {
 	private String nombre;

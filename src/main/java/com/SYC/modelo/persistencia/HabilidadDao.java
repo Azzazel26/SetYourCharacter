@@ -2,7 +2,7 @@ package com.SYC.modelo.persistencia;
 
 import java.util.List;
 
-import com.SYC.modelo.Entidad.Habilidad;
+import com.SYC.modelo.entidad.Habilidad;
 
 public interface HabilidadDao {
 	void insertar(Habilidad habilidad);

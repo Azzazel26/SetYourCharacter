@@ -2,7 +2,7 @@ package com.SYC.modelo.persistencia;
 
 import java.util.List;
 
-import com.SYC.modelo.Entidad.Deidad;
+import com.SYC.modelo.entidad.Deidad;
 
 public interface DeidadDao {
 	void insertar(Deidad deidad);

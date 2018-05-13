@@ -2,7 +2,7 @@ package com.SYC.modelo.persistencia;
 
 import java.util.List;
 
-import com.SYC.modelo.Entidad.Atributo;
+import com.SYC.modelo.entidad.Atributo;
 
 public interface AtributoDao {
 	void insertar(Atributo atributo);

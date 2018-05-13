@@ -2,7 +2,7 @@ package com.SYC.modelo.persistencia;
 
 import java.util.List;
 
-import com.SYC.modelo.Entidad.Armadura;
+import com.SYC.modelo.entidad.Armadura;
 
 public interface ArmaduraDao {
 	

@@ -1,4 +1,4 @@
-package com.SYC.modelo.Entidad;
+package com.SYC.modelo.entidad;
 
 public class Item {
 	private String nombre;

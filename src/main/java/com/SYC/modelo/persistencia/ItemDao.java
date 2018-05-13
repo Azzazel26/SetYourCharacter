@@ -2,7 +2,7 @@ package com.SYC.modelo.persistencia;
 
 import java.util.List;
 
-import com.SYC.modelo.Entidad.Item;
+import com.SYC.modelo.entidad.Item;
 
 public interface ItemDao {
 	void insertar(Item item);
