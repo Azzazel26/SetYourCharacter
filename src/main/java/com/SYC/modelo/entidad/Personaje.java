@@ -3,10 +3,19 @@ package com.SYC.modelo.entidad;
 
 import java.util.List;
 
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+
+@Document(collection ="Personaje")
 public class Personaje {
+	
+	@Id
+	private String nombre;
 	private Integer vida;
 	private Integer mana;
-	private String nombre;
 	private String raza;
 	private String clase;
 	private String cultura;
@@ -20,6 +29,11 @@ public class Personaje {
 	
 	
 	
+	public Personaje(String nombre) {
+		this.nombre = nombre;
+	}
+
+
 	public Personaje(Integer vida, Integer mana, String nombre, String raza, String clase, String cultura,
 			Deidad religion, List<Atributo> atributos, List<Habilidad> habilidades, List<Armadura> armadura,
 			List<Arma> arma, List<Item> inventario) {

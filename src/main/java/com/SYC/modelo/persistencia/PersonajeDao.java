@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.SYC.modelo.entidad.Personaje;
 
-public interface PersonajeDao{
+public interface PersonajeDao extends MongoRepository<Personaje, String>{
 	
 	void insertar(Personaje personaje);
 	void modificar(Personaje personaje);

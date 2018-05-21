@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Implementation-Title: SetYourCharacter
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Title: gs-accessing-data-mongodb
+Implementation-Version: 0.1.0
 Built-By: angel.verges
-Implementation-Vendor-Id: org.springframework.samples
+Implementation-Vendor-Id: org.springframework
 Build-Jdk: 1.8.0_161
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
- ot-starter-parent/SetYourCharacter
+ ot-starter-parent/gs-accessing-data-mongodb
 Created-By: Maven Integration for Eclipse
 
