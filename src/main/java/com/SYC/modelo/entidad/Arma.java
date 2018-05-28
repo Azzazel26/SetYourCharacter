@@ -36,7 +36,7 @@ public class Arma extends Item {
 
 	@Override
 	public String toString() {
-		return "Arma [nombre=" + getNombre() + ", tipo=" + tipo + ", daño=" + daño + "]";
+		return "Arma [nombre=" + super.getNombre() + ", tipo=" + tipo + ", daño=" + daño + "]";
 	}
 
 	

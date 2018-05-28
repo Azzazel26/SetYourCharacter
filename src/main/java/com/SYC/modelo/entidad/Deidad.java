@@ -1,6 +1,9 @@
 package com.SYC.modelo.entidad;
 
+import org.springframework.data.annotation.Id;
+
 public class Deidad {
+	@Id
 	private String nombre;
 	private String descripcion;
 	

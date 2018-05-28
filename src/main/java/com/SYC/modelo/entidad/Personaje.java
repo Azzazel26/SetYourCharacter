@@ -3,7 +3,6 @@ package com.SYC.modelo.entidad;
 
 import java.util.List;
 
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection ="Personaje")
 public class Personaje {
-	
 	@Id
 	private String nombre;
 	private Integer vida;
@@ -26,8 +24,9 @@ public class Personaje {
 	private List<Arma> arma;
 	private List<Item> inventario;
 	
-	
-	
+
+	public Personaje() {
+	}
 	
 	public Personaje(String nombre) {
 		this.nombre = nombre;
@@ -101,18 +100,38 @@ public class Personaje {
 	public void setAtributos(List<Atributo> atributos) {
 		this.atributos = atributos;
 	}
+	
+	public void addAtributo(Atributo atributo){
+		this.atributos.add(atributo);
+	}
+	
+	public void removeAtributo(Atributo atributo){
+		this.atributos.remove(atributo);
+	}
+	
+	
 	public List<Habilidad> getHabilidades() {
 		return habilidades;
 	}
 	public void setHabilidades(List<Habilidad> habilidades) {
 		this.habilidades = habilidades;
 	}
+	
+	public void addHabilidad(Habilidad habilidad){
+		this.habilidades.add(habilidad);
+	}
+	
+	public void removeHabilidad(Habilidad habilidad){
+		this.habilidades.remove(habilidad);
+	}
+	
 	public List<Armadura> getArmadura() {
 		return armadura;
 	}
 	public void setArmadura(List<Armadura> armadura) {
 		this.armadura = armadura;
 	}
+	
 	public List<Arma> getArma() {
 		return arma;
 	}
@@ -126,6 +145,30 @@ public class Personaje {
 		this.inventario = inventario;
 	}
 
+	public void removeItem(Item item){
+		this.inventario.remove(item);
+	}
+	public void addItem(Item item){
+		this.inventario.add(item);
+	}
+	
+	public void removeArma(Arma arma){
+		this.arma.remove(arma);
+	}
+	public void addArma(Arma arma){
+		this.arma.add(arma);
+	}
+	
+	public void removeArmadura(Armadura armadura){
+		this.armadura.remove(armadura);
+	}
+	public void addArmadura(Armadura armadura){
+		this.armadura.add(armadura);
+	}
+	
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Personaje [vida=" + vida + ", mana=" + mana + ", nombre=" + nombre + ", raza=" + raza + ", clase="

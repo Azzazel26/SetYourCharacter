@@ -1,6 +1,9 @@
 package com.SYC.modelo.entidad;
 
+import org.springframework.data.annotation.Id;
+
 public class Item {
+	@Id
 	private String nombre;
 	private Integer peso;
 	

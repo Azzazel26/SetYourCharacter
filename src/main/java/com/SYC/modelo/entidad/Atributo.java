@@ -1,6 +1,9 @@
 package com.SYC.modelo.entidad;
 
+import org.springframework.data.annotation.Id;
+
 public class Atributo {
+	@Id
 	private String nombre;
 	private Integer valor;
 	
