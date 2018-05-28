@@ -29,6 +29,7 @@ public class PersonajeRepositorio implements PersonajeDao{
 	public void insertar(Personaje personaje) {
 		mongot.save(personaje, "Personaje");
 	}
+	@RequestMapping(value="/crear",method=RequestMethod.POST)
 	@Override
 	public void crear(String nombre){
 		Personaje personaje = new Personaje(nombre);
