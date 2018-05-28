@@ -5,6 +5,7 @@ import java.util.List;
 import com.SYC.modelo.entidad.Armadura;
 
 public interface ArmaduraDao {
+	void crear();
 	void insertar(Armadura armadura);
 	void borrar(Armadura armadura);
 	void modificarAbsorcion(Armadura armadura, String absorcion);

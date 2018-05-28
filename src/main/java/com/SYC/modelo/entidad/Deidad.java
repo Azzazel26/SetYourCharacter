@@ -12,6 +12,10 @@ public class Deidad {
 		this.descripcion = descripcion;
 	}
 
+	public Deidad(){
+		
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -32,6 +36,5 @@ public class Deidad {
 	public String toString() {
 		return "Deidad [nombre=" + nombre + ", descripcion=" + descripcion + "]";
 	}
-	
 	
 }

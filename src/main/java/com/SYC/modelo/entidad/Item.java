@@ -7,6 +7,9 @@ public class Item {
 	private String nombre;
 	private Integer peso;
 	
+	public Item(){
+		
+	}
 	
 	public String getNombre() {
 		return nombre;

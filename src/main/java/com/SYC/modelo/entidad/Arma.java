@@ -5,12 +5,14 @@ public class Arma extends Item {
 	private String daño;
 	
 
-
+	
+	
 	public Arma(String nombre, Integer peso, String tipo, String daño) {
 		super(nombre, peso);
 		this.tipo = tipo;
 		this.daño = daño;
 	}
+
 
 
 

@@ -11,6 +11,9 @@ public class Habilidad {
 		this.nombre = nombre;
 		this.nivel = nivel;
 	}
+	public Habilidad(){
+		
+	}
 
 	public String getNombre() {
 		return nombre;
