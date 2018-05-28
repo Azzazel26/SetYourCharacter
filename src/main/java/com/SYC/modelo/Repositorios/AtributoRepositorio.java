@@ -53,8 +53,8 @@ public class AtributoRepositorio implements AtributoDao{
 
 	@Override
 	@RequestMapping(value="/crear",method=RequestMethod.POST)
-	public void crear() {
-		Atributo atributo = new Atributo();
+	public void crear(String nombre, Integer valor) {
+		Atributo atributo = new Atributo(nombre, valor);
 		this.insertar(atributo);
 	}
 

@@ -29,7 +29,12 @@ public class PersonajeRepositorio implements PersonajeDao{
 	public void insertar(Personaje personaje) {
 		mongot.save(personaje, "Personaje");
 	}
-
+	@Override
+	public void crear(String nombre){
+		Personaje personaje = new Personaje(nombre);
+		this.insertar(personaje);
+	}
+	
 	@Override
 	@RequestMapping(value="/borrar",method=RequestMethod.DELETE)
 	public void borrar(Personaje personaje) {

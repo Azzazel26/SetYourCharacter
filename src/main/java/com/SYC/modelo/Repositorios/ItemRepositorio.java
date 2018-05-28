@@ -26,8 +26,8 @@ public class ItemRepositorio implements ItemDao{
 	
 	@Override
 	@RequestMapping(value="/crear",method=RequestMethod.POST)
-	public void crear(){
-		Item item= new Item();
+	public void crear(String nombre, Integer peso){
+		Item item= new Item(nombre, peso);
 		this.insertar(item);
 	}
 	

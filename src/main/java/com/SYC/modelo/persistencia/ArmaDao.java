@@ -6,7 +6,7 @@ import com.SYC.modelo.entidad.Arma;
 
 public interface ArmaDao {
 	
-	void crear();
+	void crear(String nombre, Integer peso, String tipo, String daño);
 	void insertar(Arma arma);
 	void modificarNombre(Arma arma, String nombre);
 	void modificarDaño(Arma arma, String daño);

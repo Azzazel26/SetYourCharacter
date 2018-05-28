@@ -26,8 +26,8 @@ public class HabilidadRepositorio implements HabilidadDao{
 
 	@Override
 	@RequestMapping(value="/crear",method=RequestMethod.POST)
-	public void crear(){
-		Habilidad habilidad= new Habilidad();
+	public void crear(String nombre, Integer nivel){
+		Habilidad habilidad= new Habilidad(nombre, nivel);
 		this.insertar(habilidad);
 	}
 	

@@ -69,8 +69,8 @@ public class ArmaRepositorio implements ArmaDao {
 
 	@Override
 	@RequestMapping(value="/crear", method=RequestMethod.POST)
-	public void crear() {
-		Arma arma = (Arma) new Item();
+	public void crear(String nombre, Integer peso, String tipo, String daño) {
+		Arma arma = new Arma(nombre, peso, tipo, daño);
 		this.insertar(arma);
 	}
 

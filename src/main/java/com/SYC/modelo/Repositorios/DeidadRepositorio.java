@@ -24,8 +24,8 @@ public class DeidadRepositorio implements DeidadDao{
 	
 	@Override
 	@RequestMapping(value="/crear",method=RequestMethod.POST)
-	public void crear(){
-		Deidad deidad= new Deidad();
+	public void crear(String nombre, String descripcion){
+		Deidad deidad= new Deidad(nombre, descripcion);
 		this.insertar(deidad);
 	}
 	

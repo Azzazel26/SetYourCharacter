@@ -60,8 +60,8 @@ public class ArmaduraRepositorio implements ArmaduraDao {
 
 	@Override
 	@RequestMapping(value="/crear",method=RequestMethod.POST)
-	public void crear() {
-		Armadura armadura=(Armadura) new Item();
+	public void crear(String nombre, Integer peso, String absorcion) {
+		Armadura armadura= new Armadura(nombre, peso, absorcion);
 		this.insertar(armadura);
 	}
 

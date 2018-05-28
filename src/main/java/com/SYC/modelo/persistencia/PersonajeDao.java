@@ -12,7 +12,7 @@ import com.SYC.modelo.entidad.Personaje;
 
  
 public interface PersonajeDao{
-	
+	void crear(String nombre);
 	void insertar(Personaje personaje);
 	void modificarNombre(Personaje personaje, String nombre);
 	void modificarVida(Personaje personaje, Integer vida);
